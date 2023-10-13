@@ -19,7 +19,7 @@
         @include('partials.header')
     </header>
     {{-- MAIN --}}
-    <main class="mt-3">
+    <main class="m-3">
         @yield('contant-main')
     </main>
     {{-- FOOTER --}}

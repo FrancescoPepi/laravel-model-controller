@@ -1,15 +1,18 @@
 @extends('layouts.app')
 
-@section('page-name', 'homepage')
+@section('page-name', $title)
 
 @section('contant-main')
     <div class="container">
         <div class="row">
-            @foreach ($movies as $movie)
-                <div class="col">
-                    @include('partials.movie-card')
+
+            <div class="col">
+                <div class="card jumbotron" width="400" height="300">
+                    <img src="{{ Vite::asset('storage/images/jumbotron.jpg') }}" alt="jumbotron">
+                    <h1 class="title">{{ $title }}</h1>
                 </div>
-            @endforeach
+            </div>
+
         </div>
     </div>
 @endsection
