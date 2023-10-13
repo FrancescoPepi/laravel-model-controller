@@ -11,7 +11,7 @@
                 </li>
                 <li class="nav-item">
                     <a class="nav-link {{ Route::currentRouteName() == 'film' ? 'active' : '' }}"
-                        href="{{ Route('film') }}">FILM</a>
+                        href="{{ Route('movie') }}">FILM</a>
                 </li>
 
             </ul>
